@@ -21,6 +21,8 @@ Once the application is running, you can hit the following endpoints through the
 http://localhost:8890/indicators
 http://localhost:8890/indicators/:indicator-id
 ```
+The ports can be changed under /resources/config.edn or with an environment variable.
+
 This command runs tests:
 ```
 lein test
