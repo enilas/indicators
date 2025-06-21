@@ -1,46 +1,37 @@
-# indicators
+# Indicators API
 
-FIXME: description
+REST API for searching and displaying Indicators of Compromise from AlienVault OTX.
 
-## Installation
+## Prerequisites
 
-Download from http://example.com/FIXME.
+You will need Java, Clojure, and Leiningen to run this project.
 
 ## Usage
 
-FIXME: explanation
 
-    $ java -jar indicators-0.1.0-standalone.jar [args]
+    This is the command to create an uberjar:
+    $ java -jar indicators-0.1.0-standalone.jar
 
+    This is the command to start the server:
+    $ lein run
+
+    Once the application is running, you can hit the following endpoints through the browser or with a GET request:
+    http://localhost:8890/indicators
+    http://localhost:8890/indicators/:indicator-id
+
+    This command runs tests:
     $ lein test
 
-## Options
+## Citations
 
-FIXME: listing of options this app accepts.
+Pedestal and Component:
+https://pedestal.io/pedestal/0.8/guides/pedestal-with-component.html
+https://www.youtube.com/playlist?list=PLRGAFpvDgm2ylbXYIjvu3kI426zAP_Lqc
 
-## Examples
+Elasticsearch Component:
+https://github.com/pardeep-singh/restro-search-engine/tree/master
+
+Docker:
+https://www.freshcodeit.com/blog/clojure-in-docker-101
 
 ...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2025 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
